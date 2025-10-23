@@ -59,6 +59,9 @@
 
 /* For mobiles */
 @media screen and (max-width:640px) {
+    p{
+        font-size: 36px;
+    }
     #banner-content h1 {
         font-size: 40px;
 
@@ -78,3 +81,4 @@
     }
 
 }
+
