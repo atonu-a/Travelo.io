@@ -72,7 +72,7 @@
 /* For mobiles */
 @media screen and (max-width:640px) {
     p{
-        font-size: 20px;
+        font-size: 4vw;
         
     }
     #banner-content h1 {
@@ -115,3 +115,4 @@
 
     
 }
+
