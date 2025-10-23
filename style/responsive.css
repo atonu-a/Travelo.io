@@ -15,6 +15,7 @@
         object-fit: cover;
         border-radius: 30px;
     }
+
 }
 
 /* For tablets */
@@ -55,30 +56,62 @@
         width: 50%;
         text-align: center;
     }
+    
+    .review{
+        padding-bottom: 100px;
+    }
+    .star {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    
 }
 
 /* For mobiles */
 @media screen and (max-width:640px) {
     p{
-        font-size: 36px;
+        font-size: 20px;
+        
     }
     #banner-content h1 {
-        font-size: 40px;
+        font-size: 36px;
 
     }
     .texts h2{
-        font-size: 36px;
+        font-size: 24px;
     }
-#story-content #p {
+    #story-content #p {
     width: 100%;
     text-align: none;
 
-}
+    }   
 
     #country-card h2{
         width: 100%;
         text-align: center;
     }
+    .review {
+        padding-bottom: 125px;
+    }
+    
+    .star {
+        display: flex;
+        justify-content: center;
+    }
+    #copyright {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    footer ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+        
 
+
+    
 }
-
