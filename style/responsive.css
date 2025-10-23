@@ -60,11 +60,11 @@
 /* For mobiles */
 @media screen and (max-width:640px) {
     #banner-content h1 {
-        font-size: 36px;
+        font-size: 40px;
 
     }
     .texts h2{
-        font-size: 24px;
+        font-size: 36px;
     }
 #story-content #p {
     width: 100%;
@@ -76,4 +76,5 @@
         width: 100%;
         text-align: center;
     }
+
 }
