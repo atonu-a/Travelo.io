@@ -1,20 +1,30 @@
+/* Global Reset */
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     min-height: 100vh;
     background-image: linear-gradient(#FFFFFF, #EBDCFF);
 }
-img{
+
+img {
     width: 100%;
 }
 
+/* Buttons */
 .btn {
     background-color: #872bff;
-    border: 0px solid;
+    border: none;
     border-radius: 30px;
     color: white;
     padding: 16px 32px;
@@ -25,7 +35,6 @@ img{
 .btn-white {
     border: 2px solid #872bff;
     border-radius: 30px;
-
     padding: 16px 32px;
     cursor: pointer;
     margin-right: 20px;
@@ -34,21 +43,46 @@ img{
 .btn:hover,
 .btn-white:hover {
     transform: scale(1.1);
-
 }
 
+/* Navbar */
+header #nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header #nav a {
+    text-align: center;
+    text-decoration: none;
+    margin-right: 60px;
+    color: #9e54ff;
+    font-weight: bolder;
+    display: block;
+    padding: 14px 16px;
+}
+
+header #nav a:hover {
+    background-color: green;
+}
+
+/* Banner */
 #banner {
     background-color: white;
     background-image: url("../assets/hero-bg.jpg");
-
     margin: 100px auto 120px auto;
-
     width: 87.5%;
-
     border-radius: 40px;
     border: 2px solid #872bff10;
     padding: 20px 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,8 +106,8 @@ img{
 }
 
 #banner-content p {
-    font-weight: medium;
-    font-size: 18;
+    font-weight: 500;
+    font-size: 18px;
     color: #a8a8a8;
 }
 
@@ -86,27 +120,22 @@ img{
 #boa,
 #country,
 #review-section {
-
     width: 87.5%;
-    margin: 0px auto 120px auto;
+    margin: 0 auto 120px auto;
     text-transform: uppercase;
-
 }
 
-#services,
-#boa,
-#country,
+#services h2,
+#boa h2,
+#country h2,
 #review-section h2 {
     text-transform: none;
-
 }
 
 /* Texts */
 .texts {
-
     text-align: center;
     margin-bottom: 60px;
-
 }
 
 .texts h4 {
@@ -115,14 +144,12 @@ img{
     font-weight: bold;
     letter-spacing: 3px;
     margin-bottom: 20px;
-
 }
 
 .texts h2 {
     font-size: 44px;
     font-weight: bold;
     color: #1c1c1c;
-
 }
 
 /* Cards */
@@ -130,24 +157,21 @@ img{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
+    flex-wrap: wrap;
 }
 
 .cardsN {
-
     border-radius: 30px;
     background-color: #FDFFFF;
     padding: 60px;
     text-align: center;
     max-width: 290px;
-
+    flex: 1;
 }
 
 .cardsN:hover {
-    background-image: linear-gradient(#FDFFFF, #9e54ff);
     transform: scale(1.02);
-    
-
+    border: 1px solid #872bff;
 }
 
 .cardsN:hover p {
@@ -161,7 +185,7 @@ img{
 }
 
 .cardsN h2 {
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 28px;
     margin-bottom: 20px;
     color: #1c1c1c;
@@ -171,6 +195,7 @@ img{
     color: #a8a8a8;
 }
 
+/* Story Section */
 #story-card {
     background-color: #FDFFFF;
     border-radius: 24px;
@@ -179,29 +204,26 @@ img{
     gap: 32px;
 }
 
-#story-card #story-content h1 {
+#story-content {
+    width: 60%;
+}
+
+#story-content h1 {
     font-size: 32px;
     font-weight: bold;
     color: #1c1c1c;
     margin-bottom: 20px;
 }
 
-#story-card #story-content p {
+#story-content p {
     font-size: 16px;
     color: #0E0E0E;
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
+    text-align: center;
 }
-#story-content{
-    width: 60%;
-}
-#story-content img{
-    
-    width: 75px;
-}
-#story-content p {
-    
-    text-align: justify;
 
+#story-content img {
+    width: 75px;
 }
 
 /* Country Section */
@@ -221,7 +243,7 @@ img{
     padding: 40px;
 }
 
-/* review section */
+/* Review Section */
 .review {
     background-color: white;
     border-radius: 16px;
@@ -232,7 +254,6 @@ img{
     margin: 60px auto;
     padding-bottom: 50px;
     text-align: center;
-
 }
 
 .review .part1 p {
@@ -241,22 +262,22 @@ img{
     margin-bottom: 50px;
     font-size: 16px;
     color: #0E0E0E;
-
 }
 
 .star {
     display: flex;
     justify-content: end;
 }
-.star img{
+
+.star img {
     width: 225px;
     height: auto;
 }
 
 .part2 h3 {
     font-size: 20px;
-    font-weight: 600px;
-    opacity: 80%;
+    font-weight: 600;
+    opacity: 0.8;
     padding-top: 50px;
     position: absolute;
     text-transform: capitalize;
@@ -265,14 +286,14 @@ img{
     transform: translateX(-50%);
 }
 
-/* Footer Section */
+/* Footer */
 #copyright {
     background-color: white;
     text-transform: none;
     display: flex;
     justify-content: space-between;
     width: 98.5%;
-    margin:auto auto;
+    margin: auto;
     padding: 17px 5px;
 }
 
@@ -280,8 +301,9 @@ footer ul {
     list-style: none;
     display: flex;
     gap: 32px;
-    
+}
 
-}footer ul li:hover {
+footer ul li:hover {
     scale: 1.10;
 }
+
