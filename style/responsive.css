@@ -71,9 +71,20 @@
 
 /* For mobiles */
 @media screen and (max-width:640px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    li {
+        font-size: 200% !important;
+    }
     p{
-        font-size: 4vw;
-        
+        text-align: justify;
     }
     #banner-content h1 {
         font-size: 36px;
@@ -115,4 +126,5 @@
 
     
 }
+
 
