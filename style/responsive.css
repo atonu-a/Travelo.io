@@ -71,21 +71,15 @@
 
 /* For mobiles */
 @media screen and (max-width:640px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
+    
     p,
     a,
     
     li {
         font-size: 150% !important;
     }
-    p{
-        text-align: justify;
-    }
+   
+    
     #banner-content h1 {
         font-size: 36px;
 
@@ -126,6 +120,160 @@
 
     
 }
+/* ===========================
+   Responsive for small screens
+   =========================== */
+@media (max-width: 480px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
+    /* Navbar */
+    header #nav {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
 
+    header #nav a {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Banner */
+    #banner {
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 80px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #banner-content,
+    #banner-image {
+        width: 100%;
+    }
+
+    #banner-content h1 {
+        font-size: 32px;
+    }
+
+    #banner-content p {
+        font-size: 14px;
+    }
+
+    .btn,
+    .btn-white {
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    /* Cards */
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardsN {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .cardsN h2 {
+        font-size: 20px;
+    }
+
+    .cardsN p {
+        font-size: 14px;
+    }
+
+    /* Story */
+    #story-card {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    #story-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #story-content img {
+        width: 60px;
+        margin-bottom: 20px;
+    }
+
+    #story-content p {
+        font-size: 14px;
+    }
+
+    /* Country */
+    #country-card {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #country-card h2 {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    /* Review */
+    .review {
+        width: 90%;
+        padding-bottom: 120px;
+    }
+
+    .review .part1 p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .star img {
+        width: 200px;
+    }
+
+    .part2 h3 {
+        font-size: 30px;
+        bottom: 10px;
+        font-weight: bolder;
+    }
+
+    /* Footer */
+    #copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 10px;
+        width: 100%;
+        
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer ul li {
+        font-size: 14px;
+    }
+
+    /* Layout width fixes */
+    #banner,
+    #services,
+    #boa,
+    #country,
+    #review-section,
+    #copyright {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
