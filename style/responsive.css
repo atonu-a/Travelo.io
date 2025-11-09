@@ -72,12 +72,12 @@
 /* For mobiles */
 @media screen and (max-width:640px) {
     
-    p,
+    /* p,
     a,
     
     li {
         font-size: 150% !important;
-    }
+    } */
    
     
     #banner-content h1 {
@@ -277,3 +277,4 @@
         margin-right: auto;
     }
 }
+
