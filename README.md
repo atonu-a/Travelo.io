@@ -37,7 +37,7 @@ You only need a modern web browser to view the project.
 
 1.  **Clone the repository** from GitHub:
     ```bash
-    git clone [Your-GitHub-Repository-URL]
+    git clone [(https://github.com/atonu-a/Travelo.io)]
     ```
 2.  **Navigate to the project directory:**
     ```bash
@@ -59,7 +59,6 @@ travelo/
 ├── style/
 │   ├── responsive.css       # CSS for different screen sizes (breakpoints)
 │   └── style.css            # Core, global, and default desktop CSS styles
-├── scripts.js               # JavaScript file (currently empty, but linked)
 └── index.html               # The main HTML file (markup and structure)
 ```
 
@@ -88,4 +87,3 @@ This project is licensed under the MIT License - see the LICENSE file (if applic
 
 -----
 
-Would you like me to generate a simple `LICENSE.md` file (e.g., MIT License) to include in your repository?
