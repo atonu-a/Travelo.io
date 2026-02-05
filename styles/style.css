@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+ /* cards  */
+.cardsN {
+    @apply rounded-[30px] bg-[#FDFFFF]  xl:p-[60px] lg:px-[20px] lg:py-[80px] p-15 w-[90%]  max-w-[320px]  flex flex-col items-center text-center;
+
+} 
+.cardsN:hover {
+    @apply translate-y-[-10px] border border-[#872bff] transition-all duration-400 ease-in-out;
+}
+
+.cardsN img {
+    @apply mb-7.5 w-[70px] h-[70px];
+
+}
+.cardsN h2 {
+    @apply font-extrabold xl:text-[28px] text-[20px] mb-5 text-[#1c1c1c];
+
+}
+.cardsN p {
+    @apply text-[#a8a8a8];
+    
+}
+
+/* Headings */
+.heading-h2 {
+    @apply font-bold md:text-[44px] sm:text-[32px] text-[24px];
+}
+
+
+/* Country */
+/* h2 */
+.county-name{
+    @apply  rounded-2xl lg:p-10 p-5 border border-[#0e0e0e]/15 lg:text-[32px] text-[22px] font-bold md:text-center lg:w-auto w-full gap-6;
+}
+
+/* review */
+.review{
+    @apply flex flex-col gap-6 p-6 rounded-2xl w-[90%] mx-auto;
+}
