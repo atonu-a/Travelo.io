@@ -2,7 +2,7 @@
 
 A modern, high-performance landing page for **Travelo**, a travel agency specializing in Asian destinations. Built with **Tailwind CSS v4**, this project features a sleek dark mode, responsive navigation, and smooth interactive elements.
 
-**🔗 [Live Demo**](https://travelo-49wj.onrender.com/)
+**🔗 [Live Demo](https://travelo-49wj.onrender.com/)**
 
 ## ✨ Features
 
